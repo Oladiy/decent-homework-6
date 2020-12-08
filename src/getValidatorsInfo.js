@@ -64,7 +64,7 @@ async function getValidatorsInfo() {
         // Получить значение коммиссии каждого валидатора
         const validatorCommissions = await getValidatorCommissionValues(api, validators);
 
-        // Получить предпочтения каждого валидатора
+        // Получить ledger каждого валидатора
         const validatorLedger = await getValidatorLedgers(api, validators);
 
         validators.forEach((authorityId, index) => {
